@@ -7,7 +7,7 @@ const init = () => {
     return JSON.parse( localStorage.getItem('todos')) || [];
 }
 
-export const UseTodo = () => {
+export const useTodo = () => {
     const [ todos, dispatch ] = useReducer( todoReducer, [], init );
 
     useEffect( () => {
